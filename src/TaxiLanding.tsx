@@ -244,7 +244,7 @@ export default function TaxiLanding() {
   async function submitBooking(e) {
     e.preventDefault();
     if (Object.values(bErrors).some(Boolean)) { setSent("err"); return; }
-    setSending(True)
+    setSending(true)
     const lines = [
       `Nom: ${b.name}`,
       `Téléphone: ${b.phone}`,
